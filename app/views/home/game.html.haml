@@ -1,0 +1,13 @@
+.row
+  - index = 0
+  - @first_half.each do |num|
+    .col-xs-2.card.center{"data-index" => index}
+      .number
+        = num
+    - index += 1
+.row
+  - @last_half.each do |num|
+    .col-xs-2.card.center{"data-index" => index}
+      .number
+        = num
+    - index += 1
